@@ -1,5 +1,233 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: "IBM Plex Mono";
+  background-color: var(--bg-color-dark);
+  background-image: var(--cover-image-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+ 
+.header {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  box-sizing: border-box;
+  height: 100vh;
+  min-height: 668px;
+}
+
+.decorated-zone {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--h2-color-dark);
+  border-left: 1px solid var(--h2-color-dark);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--h2-color-dark);
+  border-right: 1px solid var(--h2-color-dark);
+}
+
+.decorated-element {
+  position: absolute;
+  color: var(--h2-color-dark);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0%;
+}
+
+.decorated-element::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--h2-color-dark);
+  background-color: var(--h2-color-dark);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.header__theme-menu-item {
+  box-sizing: border-box;
+  color: var(--h2-color-dark);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button {
+  box-sizing: border-box;
+  border: none;
+  color: currentColor;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  background-color: transparent;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.header__theme-menu-button:hover {
+  padding: 4px 13px;
+  outline: 1px solid #FF007066;
+}
+
+.header__theme-menu-button_active {
+  padding: 4px 13px;
+  outline: 1px solid var(--h2-color-dark);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--h2-color-dark);
+  padding: 4px 13px;
+}
+
+.title {
+  box-sizing: border-box;
+  color: var(--title-color-dark);
+  font-weight: 700;
+  line-height: 83%;
+  letter-spacing: 0%;
+}
+
+.header_title {
+  text-shadow: 4px 4px 0 var(--h2-color-dark);
+}
+
+.header_text {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+
+.title-decor {
+  color: var(--bg-color-dark);
+  background-color: var(--h2-color-dark);
+}
+
+
+.section_two_reasons {
+  display: grid;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.subtitle {
+  box-sizing: border-box;
+  color: var(--h2-color-dark);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+
+.list_of_cards {
+  display: grid;
+  gap: 20px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.name_of_the_list_item {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+
+.cards {
+box-sizing: border-box;
+}
+
+.two_name_of_the_list_item {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+
+p {
+  box-sizing: border-box;
+  padding-top: 10px;
+  color: var(--text-color-dark);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+}
+
+.section_three_drops {
+  display: grid;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.section_five_tips {
+  display: grid;
+  box-sizing: border-box;
+}
+
+.wrapper_for_images {
+  display: grid;
+  box-sizing: border-box;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100vh;
+  min-height: 668px;
+}
+
+.footer_title {
+  text-shadow: 2px 2px 0 var(--h2-color-dark);
+}
+
+a {
+display: inline-block;
+box-sizing: border-box;
+line-height: 100%;
+text-decoration: none;
+text-shadow: 3px 3px var(--h2-color-dark);
+}
+
+a:hover {
+border-bottom: 1px solid var(--text-color-dark);
+padding-bottom: 3px;
+}
+
+a:focus-visible {
+padding-bottom: 3px;
+outline: 1px solid var(--text-color-dark);
 }
