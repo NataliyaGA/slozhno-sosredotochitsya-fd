@@ -72,7 +72,7 @@ text-shadow: 2px 2px 0 var(--h2-color-dark);
 }
 
 .theme-light a {
-text-shadow: 3px 3px var(--h2-color-light);
+text-shadow: 2px 2px var(--h2-color-light);
 }
 
 .theme-light a:hover {
@@ -92,5 +92,5 @@ outline: 1px solid var(--text-color-light);
   --h2-color-light: #FF8DCB;
   --text-color-light: #353430;
   --h2-color-dark: #FF0070;
-}
+  }
 }

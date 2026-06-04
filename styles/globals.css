@@ -26,7 +26,7 @@ ul {
   list-style: none;
 }
 
-picture {
+picture .images {
   margin: 0;
   padding: 0;
 }
