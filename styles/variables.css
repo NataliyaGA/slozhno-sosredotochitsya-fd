@@ -172,7 +172,7 @@
   padding-top: 20px;
   }
   .section_gallery {
-  padding: 80px 20px 60px 20px;
+  padding: 80px 20px 70px 20px;
   }
   .wrapper_for_images {
   grid-template-columns: repeat(3, 1fr);
@@ -294,7 +294,7 @@
   padding-top: 20px;
   }
   .section_gallery {
-  padding: 80px 20px 60px 20px;
+  padding: 80px 20px 75px 20px;
   }
   .wrapper_for_images {
   grid-template-columns: repeat(3, 1fr);
