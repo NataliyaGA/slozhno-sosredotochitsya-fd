@@ -60,7 +60,6 @@
 
 .header__theme-menu-list {
   display: flex;
-  gap: 15px;
   box-sizing: border-box;
 }
 

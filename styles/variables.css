@@ -35,6 +35,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
   }
   .decorated-zone::before {
   bottom: 10px;
@@ -113,6 +114,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
   }
   .header_title {
   justify-self: start;
@@ -172,7 +174,7 @@
   padding-top: 20px;
   }
   .section_gallery {
-  padding: 80px 20px 70px 20px;
+  padding: 80px 20px 75px 20px;
   }
   .wrapper_for_images {
   grid-template-columns: repeat(3, 1fr);
@@ -220,7 +222,7 @@
 
 
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .header {
   height: 100vh;
   min-height: 768px;
@@ -233,6 +235,7 @@
   .header__theme-menu-list {
   justify-content: center;
   align-items: baseline;
+  gap: 20px;
   }
   .header_title {
   justify-self: start;
