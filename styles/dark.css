@@ -1,7 +1,11 @@
 :root.theme-dark {
-  --cover-image-dark: url(../images/cover-image-dark.png);
-  --bg-color-dark: #000028;
-  --title-color-dark: #DB00FF;
-  --h2-color-dark: #FF0070;
-  --text-color-dark: #F1B2CE;
+  --cover-image: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --title-color: #DB00FF;
+  --subtitle-color: #FF0070;
+  --text-color: #F1B2CE;
+  --accent: #000028;
+  --bg-accent: #FF0070;
+  --hover: #FF007066;
+  --footer: #FF0070;
 }
