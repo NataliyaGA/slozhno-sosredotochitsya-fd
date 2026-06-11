@@ -41,6 +41,7 @@
 
 .decorated-element {
   position: absolute;
+  display: inline-block;
   color: var(--subtitle-color);
   font-weight: 400;
   font-size: 18px;

@@ -9,3 +9,23 @@
   --hover: #FF007066;
   --footer: #FF0070;
 }
+
+.theme-dark .decorated-element {
+  position: absolute;
+  display: inline-block;
+  color: var(--subtitle-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0%;
+}
+
+.theme-dark .decorated-element::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--subtitle-color);
+  background-color: var(--subtitle-color);
+}
